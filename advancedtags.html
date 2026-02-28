@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced HTML Tags</title>
+</head>
+<body>
+    <h1 id="top">Learning About The Advanced Tags</h1><hr>
+    <h3>An Introduction to HTML Attributes</h3>
+    <p>HTML (HyperText Markup Language) is the standard markup language for creating and structuring content on the World Wide Web. It uses a system of tags and attributes to define elements such as headings, paragraphs, links, images, and other multimedia, which web browsers then interpret and display as a visual webpage.</p><hr>
+    
+    <!--id attribute-->
+    <p id="Main_paragraph">HTML (HyperText Markup Language) is the standard markup language for creating and structuring content on the World Wide Web. It uses a system of tags and attributes to define elements such as headings, paragraphs, links, images, and other multimedia, which web browsers then interpret and display as a visual webpage.</p><hr>
+
+    <!--class attribute-->
+    <p class="body_paragraph">HTML serves as the foundational language of the web, providing a simple tag-based structure for organizing content like text, images, and links. </p>
+    <p class="body_paragraph">Modern HTML5 features include native support for multimedia via video and audio tags, alongside semantic elements that improve accessibility and SEO. </p>
+    <p class="body_paragraph">It also offers advanced capabilities like offline storage and the canvas element for rendering dynamic 2D and 3D graphics.</p>    
+    <hr>
+
+    <!--style-->
+    <h1 style="background-color: black; color: white; text-align: center; border-radius: 10px; border-style: solid; ">An HTML language is very easy to learn, simple and understand properly.</h1><hr>
+
+    <!--table-->
+    <table border="2" style="width: 50%; border-radius: 10px;" cellpadding="5px" cellspacing="5px" >
+        <tr style="text-align:center; background-color: bisque;">
+        <th>Name</th>
+        <th>Roll_no</th>
+        <th>Class</th>
+        </tr>
+        <tr style="text-align: center; background-color: azure;" >
+            <td>divya</td>
+            <td>29</td>
+            <td>SE</td>
+        </tr>
+        <tr style="text-align: center; background-color: azure;">
+            <td>prachi</td>
+            <td>30</td>
+            <td>FE</td>
+        </tr>
+        <tr style="text-align: center; background-color: azure;">
+            <td>mansi</td>
+            <td>44</td>
+            <td>BE</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!--Anchor tag-->
+    <h2>Linking to External Sites</h2>
+    <a href="https://www.google.com">google link</a>
+    <p>Google link in another tab by using target attribute--<a href="https://www.google.com" target="_blank">google link</a></p>
+    <hr>
+
+    <h2>links in a list</h2>
+    <uL>
+        <li><a href="https://www.google.com">google</a></li>
+        <li><a href="https://www.yahoo.com">yahoo</a></li>
+        <li><a href="https://www.duckduckgo.com">duck duck go</a></li>
+        <li><a href="https://www.wikipedia.com">wikipedia</a></li>
+    </uL>
+    <hr>
+
+    <h2>links to go to the other webpages</h2>
+    <p>Go to page 1 <a href="page1.html">page1</a></p>
+    <p>Go to page 2 <a href="page2.html">page2</a></p>
+    <hr>
+
+    <!--links to move to differnt section of your page by using the id attributes and you need to reference element id with a # in our href-->
+    <a href="#">Go back to the top of this page</a>
+
+    <!--Image tag-->
+    <h3>Here is the image of moon</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/330px-FullMoon2010.jpg">
+    <hr>
+
+    <h3>Resize the moon image</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/330px-FullMoon2010.jpg" width="70px" height="100px">
+    <hr>
+
+    <h3>resize the moon image by changing only width</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/330px-FullMoon2010.jpg" width="100px">
+    <hr>
+
+    <h3>Here is the image that would be not load</h3>
+    <img src="not_real.jpg"><br>
+    <img src="not_real.jpg" alt="This would be the image of moon and stars.">
+    <hr>
+
+    <h3>We can use image as a link</h3>
+    <a href="https://www.nasa.gov">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/330px-FullMoon2010.jpg"  alt="A moon link to NASA" width="100px">
+    </a>
+    <hr>
+
+    <h3>We can add animated GIFs by using giphy</h3>
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnJsb3FsZWVmZDE5Y3A0emdhYWt2cGRqZmg2ejJyZGRoanN4eXdveSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/aN9GqoR7OD3nq/giphy.webp" width="250px">
+    <hr>
+
+    <!--Interactive tags-->
+    <h3>Here are some buttons!</h3>
+    <button>Sign in</button>
+    <button>Click Here!</button>
+    <button>Register Here</button>
+    <button>Submit</button>
+    <hr>
+
+    <h3>Here are some input fields</h3>
+    <input type="text" placeholder="Enter Username">
+    <input type="email" placeholder="Enter Email">
+    <input type="date">
+    <input type="color">
+    <input type="time">
+    <hr>
+
+    <h3>Here are some Radio Buttons</h3>
+    <input type="radio" id="makeup"  value="Makeup" name="fav_product">
+    <label for="makeup">This is Makeup product</label><br>
+    <input type="radio" id="pizaa"  value="Pizza" name="fav_food">
+    <label for="pizza">I want pizza!</label>
+    <input type="radio" id="burger"  value="burger" name="fav_food">
+    <label for="burger">I want burger!</label>
+    <hr>
+
+    <h3>Here are some select elements</h3>
+    <label id="teams">Your favourite cricket team:</label>
+    <select for="teams" name="fav_team">
+        <option value="RCB">RCB</option>
+        <option value="MI">MI</option>
+        <option value="GG">GG</option>
+        <option value="DC">DC</option>
+        <option value="UPW">UPW</option>
+    </select>
+    <hr>
+    <!--OR-->
+    <label id="teams">Your favourite cricket team:</label>
+    <select for="teams">
+        <option>RCB</option>
+        <option>MI</option>
+        <option>GG</option>
+        <option>DC</option>
+        <option>UPW</option>
+    </select>
+    <hr>
+
+    <h3>Here are some of the checkboxes</h3>
+    <input type="checkbox" id="color" value="red" name="fav_colour">
+    <label for="color">I like red color!</label>
+    <input type="checkbox" id="color" value="blue" name="fav_colour">
+    <label for="color">I like blue color!</label>
+    <input type="checkbox" id="color" value="black" name="fav_colour">
+    <label for="color">I like black color!</label>
+    <input type="checkbox" id="color" value="purple" name="fav_colour">
+    <label for="color">I like purple color!</label>
+    <hr>
+
+    <!--forms-->
+    <form>
+        <label for="Username">NAME:</label>
+        <input type="text" id="Username" placeholder="Enter Username"><br>
+        <label for="Email">EMAIL:</label>
+        <input type="email" id="Email" placeholder="Enter Email"><br>
+        <label for="Gender">GENDER:</label>
+        <select id="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option> 
+        </select><br>
+        <label for="DOB">DOB:</label>
+        <input type="date" id="DOB"><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset Form</button>
+    </form>
+    <hr>
+    <!--OR-->
+    <form action="page3.html" style="color: rgb(1, 38, 40);">
+        <label for="Username">NAME:</label>
+        <input type="text" id="Username" placeholder="Enter Username" style="background-color: rgb(0, 153, 155);" ><br>
+        <label for="Email">EMAIL:</label>
+        <input type="email" id="Email" placeholder="Enter Email" style="background-color: rgb(0, 153, 155);"><br>
+        <label for="Gender">GENDER:</label>
+        <select id="Gender" style="background-color: rgb(0, 153, 155);">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option> 
+        </select><br>
+        <label for="DOB">DOB:</label>
+        <input type="date" id="DOB" style="background-color: rgb(0, 153, 155);"><br>
+        <button type="submit" style="background-color: rgb(0, 153, 155);">Submit</button>
+        <button type="reset" style="background-color: rgb(0, 153, 155);">Reset Form</button>
+    </form>
+    <hr>
+
+    <h3>search google</h3>
+    <form action="https://www.google.com/search">
+        <label for="search_item">Search</label>
+        <input type="text" id="search_item" name="q" required>
+        <button type="submit">search</button>
+        <button type="reset">Clear</button>
+    </form>
+    <hr>
+</body>
+</html>
