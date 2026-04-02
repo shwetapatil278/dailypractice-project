@@ -1,0 +1,64 @@
+div{
+    width: 250px;
+    height:200px;
+    background-color: palevioletred;
+}
+
+#one{
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    margin: 10px;
+    padding: 25px;
+    
+}
+
+#two{
+    border-width: 10px;
+    border-color: blue;
+    border-top-width: 5px;
+    border-style: dashed;
+    border-bottom-color: brown;
+    margin-bottom: 10px;
+    padding: 100px;
+}
+
+#three{
+    border-width: 5px 50px;
+    border-color: aqua;
+    border-style:dotted;
+    border-radius: 25px; /* Curvers the border */
+    padding: 10px 100px;
+    margin: 10px 200px;
+}
+
+#four{
+    border: 4px solid black;
+    padding:1px 10px 50px 100px;
+    margin:1px 10px 50px 100px;
+    box-shadow: -20px 20px 10px darkgreen;
+}
+
+#five{
+    border:4px solid black;
+    padding: 20px;
+    margin: 100px;
+    box-sizing: border-box;
+}
+
+#six{
+   border: 4px solid black;
+   padding: 20px 40px;
+   margin: 50px auto;
+   box-sizing: border-box; 
+} 
+
+button{
+    background: blue;
+    color: yellow;
+    border: 5px dotted blue;
+    margin: 50px 100px;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 5px lightblue;
+}
