@@ -1,0 +1,109 @@
+/*universal selector - selects everthing*/
+*{
+    background-color: bisque;
+}
+
+/* element selector -select all of one element...simply use element name */
+button{
+    background-color: pink;
+    color: rgb(105, 27, 40);
+}
+/* selector list - select multiple list...use element name separated by commas */
+h1, h2, h3{
+    background-color: palevioletred;
+    color: rgb(56, 3, 12);
+}
+/* class selector - select mutliple element by class...use a period then class name */
+.info{
+    background-color: brown;
+    color: white;
+}
+/* ID selector - select a single element by id...using hashtag and then a id name */
+#my_list{
+    color:blueviolet;
+}
+/* 
+    Descendant Selector....Select all elements that are inside or descendant's of another
+    List elements sepearted by spaces.
+*/
+#my_list li{
+    background: rgb(99, 158, 181);
+}
+
+/*
+    A combination of methods to select all elements inside our our div #my_div.
+    This will override any of the previous stylings because our selctor is more specific here.
+*/
+#div , div *{
+    background-color: green;
+    color: greenyellow;
+}
+
+/* 
+    Let's style our footer because we can! It also gives us an opprotunity to talk about inheritence.
+    If we try to set the background and color of the footer; it looks like only the color changes!
+    The background does not change.
+
+    This is because we are applying styling to a parent element here...the footer.
+    What we actully see is the child elemnt...the paragraph.
+    Certain css properties are inheritied from a parent while others are not.
+    In this example, the color property is inherited from a parent.  The background propterty is not.
+*/
+footer{
+    background: greenyellow;
+    color: darkorchid;
+}
+
+/* We have to set the background property of the child to see the change we desire */
+footer p{
+    background: greenyellow;
+}
+
+.pixel{
+    background-color: blueviolet;
+    width: 300px;
+}
+
+.percent{
+    background-color: brown;
+    width: 80%;
+}
+
+#parent_div{
+    width: 400px;
+    border: 4px solid black;
+}
+
+.small_image{
+    width: 200px;
+}
+
+.medium_image{
+    width: 400px;
+}
+
+.large_image{
+    width: 600px;
+}
+
+.viewport{
+    background-color: blue;
+    color: white;
+    width: 40vw;
+    height: 30vh;
+}
+
+.font_size{
+    font-size: 20px;
+    font-style: italic;
+    font-display: block;
+    color: blueviolet;
+}
+
+#em_p{
+    font-size: 5em;
+}
+
+#rem_p{
+    font-size: 0.99rem;
+}

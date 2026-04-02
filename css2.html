@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS selector</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1>Learning about css selector</h1>
+    <hr>
+    <button>Button 1</button>
+    <button>Button 2</button>
+    <button>Button 3</button>
+
+    <h2> This is h2 heading</h2>
+    <h3> This is h3 heading</h3>
+
+    <!-- We can give mutliple tags a class to be more specific with our styling-->
+    <p class="info">This is a paragraph with a class attribute of 'info'</p>
+    <p>Here is the paragraph without the class attribute</p>
+
+    <!--we can give a unique ID to a specific tag to better describe it-->
+    <ul id="my_list">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+
+    <!--we can create a div and give it an id to target everthing inside the div-->
+    <div>
+        <a href="page1.html">check out another html page</a>
+        <p>In this style we will see different forms</p>
+        <form>
+    <label for="Username">Enter the Username :</label>
+    <input type="text" id="Username" name="My_name" placeholder="Username"><br>
+
+    <label for="Password">Enter the Password :</label>
+    <input type="password" id="Password" name="My_password" value="Password"><br>
+     
+    <button type="submit">Submit</button><br>
+    <button type="reset">Reset</button>
+   </form>
+    </div>
+    <footer>
+            <p>In style since the dawn of time.</p>
+    </footer>
+    <!--unit of size - Element width-->
+    <h4>Learning about width!</h4>
+    <h4>Element Width : Pixel Vs. Percent</h4>
+    <div class="pixel">300px, fixed width, parent-main tag</div>
+    <div class="percent">80%, relative width, parent-main tag</div>
+    <!--or-->
+    <h4>OR</h4>
+    <div id="parent_div">
+       <div class="pixel">300px, fixed width, parent-main tag</div>
+       <div class="percent">80%, relative width, parent-main tag</div> 
+    </div>
+
+    <h4>Resizing image</h4>
+    <img class="small_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/330px-FullMoon2010.jpg">
+    <img class="medium_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/330px-FullMoon2010.jpg">
+    <img class="large_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/330px-FullMoon2010.jpg">
+    
+    <h4>viewport</h4>
+    <div class="viewport">A viewport is the dimension of yours computer screen</div>
+
+    <!--units of size- font size-->
+    <h4>learning about font size - pixel vs. em/rem</h4>
+        <p class="font_size">
+            Web development involves creating, building, and maintaining websites and web applications through frontend (user-facing), backend (server-side), and full-stack development. Key technologies include HTML, CSS, and JavaScript for the frontend, with backend, database, and API management using languages like Python, PHP, or Node.js. 
+            Key Technologies and Tools :-
+                     1] Frameworks/Libraries: React, Angular, Vue (frontend); ExpressJS, Django, Laravel (backend).
+                     2] Environments: Node.js for running JavaScript on the server.
+                     3] Databases: MongoDB, MySQL, PostgreSQL.
+                     4] Version Control: Git and platforms like GitHub are standard for tracking code changes.
+                     5] Code Editors: Visual Studio Code is the most popular, free, and customizable tool for writing code.
+        </p>
+        <p id="em_p">
+            Code Editors: Visual Studio Code is the most popular, free, and customizable tool for writing code.
+        </p>
+        <p id="rem_p">
+            Code Editors: Visual Studio Code is the most popular, free, and customizable tool for writing code.
+        </p>
+</body>
+</html>
