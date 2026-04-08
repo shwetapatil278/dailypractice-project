@@ -1,0 +1,44 @@
+/*
+    We can access elmenets of the HTML document using the getElementById method.
+    In order to use this method we MUST give our HTML elements unique IDs.
+    For example, We had to give our <main> tag an id of 'my_main'.
+    We can use getElementById on our document and pass in the id to access the element.
+*/
+const my_main = document.getElementById("my_main");
+
+/*
+    Now that we have access to our main tag
+    We can create elements for the document and appened them to our main tag.
+*/
+const new_heading = document.createElement("h2");
+const new_paragraph = document.createElement("p");
+my_main.append(new_heading);
+my_main.append(new_paragraph);
+// We can alter the text of these new elements using innerText or innerHTML attributes.
+new_heading.innerText = "This is my new heading!";
+new_paragraph.innerHTML = "This is my new paragraph!";
+
+// We can access other elements from our HTML document by their id using getElementById.
+const original_heading = document.getElementById("original_heading");
+const orig_paragraph = document.getElementById("original_paragraph");
+
+// We can now alter or remove these elements.
+original_heading.innerHTML = "We are using getElementById!!! We've updated this text!";
+orig_paragraph.remove();
+
+// We can get and set attributes of our elements.
+console.log(original_heading.getAttribute("id"))
+original_heading.setAttribute("class", "updated");
+
+/*
+    We can access entire classes of elements from our HTML document using getElementByClassName.
+    This will return an array that we can loop over!
+*/
+const lorem_text = document.getElementsByClassName("lorem_text");
+for (text of lorem_text){
+    //text.setAttribute("style", "color:orange; background:blue");
+    text.style.color = "purple";
+    text.style.background = "pink";
+    text.innerHTML = "Now we understand how the DOM works!";
+}
+
