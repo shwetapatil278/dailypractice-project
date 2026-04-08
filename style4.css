@@ -1,0 +1,42 @@
+ main p{
+    border: 2px solid;
+    margin: 10px 50px;
+    padding: 20px;
+}
+
+#p1{
+    font-family: serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1.0rem;
+
+    color: rgb(184, 126, 135);
+    background-color: rgb(109, 20, 50);
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+#p2{
+   font-family: "Playwrite IE", cursive;
+   font-weight:400;
+   font-style: normal;
+
+   color: rgb(159, 55, 90);
+   background-color: rgb(173, 135, 173);
+   text-align: left;
+   text-decoration:double;
+   text-transform: lowercase;
+}
+
+#p3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-display: swap;
+
+    color: black;
+    background-color: whitesmoke;
+    text-align: right;
+    text-decoration: overline;
+    
+}
