@@ -1,0 +1,71 @@
+/* By default, anchor tags (links) are inline elements.  We can override and make them block */
+.a_inline{
+    background: plum;
+    border: 1px solid black;
+    margin: auto;/*This does not center for INLINE */
+}
+    /* 
+        We can add margin to inline elements but we CANNOT set the margin to auto.
+        This is because there is no extra horizontal space available for an inline element 
+        margin: auto means "there is no margin" for inline or inline-block elements. 
+    */
+
+/* By default, anchor tags (links) are inline elements.  We can override and make them block */
+.a_block{
+    background: plum;
+    border: 1px solid black;
+    display: block;
+    width: fit-content;/*This will set the width to be jsut as big as needed*/
+    margin: auto; /*Can use margin: auto as we are now block! */
+}
+
+/* By default, spans are inline elements.  However, we can override and make them block */
+.span_inline{
+    background: paleturquoise;
+    border: 1px solid black;
+    width:400px; /*Doesn't do anythign because we are inline! */
+}
+
+.span_block{
+    background: paleturquoise;
+    border: 1px solid black;
+    display: block;
+    width:400px;
+    margin:auto;
+    text-align: center;
+}
+
+/*  
+    Be default, images are inline-block elements.  We can alter their height and width.  
+    However, they are on the same line. 
+    We can override and make them block.
+*/
+.img_inline_block{
+    width: 50px;
+    height:50px;
+}
+
+.img_block{
+    width: 50px;
+    height:50px;
+    display:block;
+    margin: 10px auto;
+}
+
+
+/* 
+    By default, buttons are inline-block elements.  We can alter their height and width.  
+    However, they are on the same line.
+    We can override and make them block .
+*/
+.button_inline_block{
+    width:250px;
+    height:50px;
+}
+
+.button_block{
+    width:250px;
+    height:50px;
+    display: block;
+    margin: auto;
+}
