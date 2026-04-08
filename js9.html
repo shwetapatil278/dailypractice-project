@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Events</title>
+        <script defer src="script9.js"></script>
+    </head>
+
+    <body>
+        <header>
+           <h1>We are Learning About Values!</h1>
+        </header>
+        
+        <main>
+            <h2>Input Text Example</h2>
+            <label for="name_input">Enter your name: </label>
+            <input type="text" id="name_input" name="my_name" placeholder="Enter Name">
+            <button id="name_button">Submit</button>
+            <p id="name_message"></p>
+
+            <h2>Dropdown Example</h2>
+            <label for="teams">Choose a Cricket Team:</label>
+            <select id="teams" name="fav_team">
+                <option value="RCB"> RCB :</option>
+                <option value="MI"> MI :</option>
+                <option value="CSK"> CSK :</option>
+                <option value="SRH"> SRH :</option>
+            </select>
+            <button id="team_button">Submit</button>
+            <p id="team_message"></p>
+
+            <h2>Radio Button Example</h2>
+            <form id="food_form">
+                <input type="radio" id="pizza" value="pizza" name="fav_food">
+                <label for="pizza">I want pizza!</label>
+                <input type="radio" id="burger" value="burger" name="fav_food">
+                <label for="burger">I want burger!</label>
+                <input type="radio" id="salad" value="salad" name="fav_food">
+                <label for="sald">I want salad!</label>
+                <!-- If the button is in the form, the form will submit and the page reload. -->
+            </form>
+            <button id="food_button">Submit</button>
+            <p id="food_message"></p>
+
+            <h2>Check Box Example</h2>
+            <form id="color_form">
+                <input type="checkbox" id="red" value="red" name="fav_colors">
+                <label for="red">I like the color red!</label>
+                <input type="checkbox" id="green" value="green" name="fav_colors">
+                <label for="green">I like the color green!</label>
+                <input type="checkbox" id="blue" value="blue" name="fav_colors">
+                <label for="blue">I like the color blue!</label>
+            </form>
+            <button id="color_btn">Submit</button>
+            <p id="color_message"></p>
+
+            <h2>Input Date Example</h2>
+            <label for="birthday_input">Enter Your Birthday: </label>
+            <input type="date" id="birthday_input">
+            <p id="birthday_message"></p>
+
+            <h2>Input Color Example</h2>
+            <label for="color_input">Pick a background color!</label>
+            <input type="color" id="color_input">
+        </main>
+
+        <footer>
+           <p>Interact with me.</p>
+        </footer>
+    </body>
+</html>
